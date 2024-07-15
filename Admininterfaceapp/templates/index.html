@@ -1,0 +1,19 @@
+{% include "header.html"%}
+{% include "navbar.html"%}
+{% load static %}
+<html >
+<head>
+    <title>Navbar</title>
+    <link rel="stylesheet" href="{% static  'css/style.css'%}" >
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    {% block content %}
+
+
+
+    {% endblock %}
+</body>
+</html>

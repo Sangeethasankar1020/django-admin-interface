@@ -1,0 +1,26 @@
+.navbar{
+    font-family: 'Times New Roman';
+    box-shadow: 1px 1px 5px black;
+    padding: 5px;
+    color: white;
+}
+
+.navbar-brand,.navbar{
+    font-size: 21px;
+    color: white;
+}
+.navbar-nav{
+    display: flex;
+}
+
+.color{
+    background-color: #154660;
+    border-color: #154660;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
