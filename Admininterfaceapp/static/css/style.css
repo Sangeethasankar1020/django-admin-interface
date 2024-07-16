@@ -24,3 +24,15 @@ h1{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.well{
+    box-shadow: 2px 2px 15px 0px black;
+    background-color: rgb(240, 237, 237);
+    padding: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

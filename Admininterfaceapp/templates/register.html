@@ -1,11 +1,40 @@
 {% extends "index.html" %}
+
+{% comment %} {% extends "index.html" %}
+{% load crispy_form_tags %}
 {% block content %}
-    <h1>Register Page</h1>
-    <div class="col-md-offset-4 col-md-4">
-        <form method="POST" autocomplete="off"> #dont get previous data
 
-        </form>
+    <div class="container-fluid main" style="margin-top:100px">
+        <div class="col-md-offset-4 col-md-4">
+            <h2 class="text-primary page-header text-center">User Registration</h2>
+        </div>
+        <div class="col-md-offset-4 col-md-4 well">
+            <form method="POST" autocomplete="off"> 
+                {{form|crispy}}
+                <button type="sumbit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
     </div>
+    
 
-    {{form}}
+   
+{% endblock %} {% endcomment %}
+
+
+
+
+
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container-fluid main" style="margin-top:100px">
+        <div class="col-md-offset-4 col-md-4">
+            <h2 class="text-primary page-header text-center">User Registration</h2>
+        </div>
+        <div class="col-md-offset-4 col-md-4 well">
+            <form method="POST" autocomplete="off"> 
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}
