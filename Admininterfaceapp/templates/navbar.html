@@ -29,9 +29,9 @@
             <a href="#" class="navbar-brand" >Admin Panel </a>
         </div>
         <div class="nav navbar-nav navbar-right"> 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{% url 'Home' %}" >Home</a></li>
+            <li><a href="{% url 'Login' %}" name="Login">Login</a></li>
+            <li><a href="{% url 'Register' %}" name="Register">Register</a></li>
         </div>
     </div>
 
