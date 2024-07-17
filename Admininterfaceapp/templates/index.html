@@ -2,19 +2,19 @@
 {% include "navbar.html"%}
 {% load static %}
 <html >
-<head>
+{% comment %} <head>
     <title>Navbar</title>
     <link rel="stylesheet" href="{% static  'css/style.css'%}" >
     <script src="{% static 'jquery/jquery.min.js'%}"></script>
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-</head>
+</head> {% endcomment %}
 <body>
     {% block content %}
-
-
-
+    <div>
+        this is syntax page
+    </div>
     {% endblock %}
 </body>
 

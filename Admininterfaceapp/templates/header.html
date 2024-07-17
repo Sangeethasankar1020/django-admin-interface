@@ -3,3 +3,10 @@
 <link rel="stylesheet" href="{% static  %}" >
 <link rel="stylesheet" href="{% static  %}" >
 <link rel="stylesheet" href="{% static  %}" > {% endcomment %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static  'css/style.css'%}" >
+{% comment %} <script src="{% static 'jquery/jquery.min.js'%}"></script>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %} {% endcomment %}

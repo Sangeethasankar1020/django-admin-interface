@@ -37,3 +37,7 @@ h1{
     justify-content: center;
     gap: 20px;
 }
+
+body{
+    background-color: #001780;
+}
