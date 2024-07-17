@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container-fluid main" style="margin-top:100px">
+    
+    <div class="col-md-offset-4 col-md-4 ">
+        {% comment %} <h1>Welcome {{user.username}}</h1> {% endcomment %}
+        
+        <table class="table table-bordered">
+            <tr>
+                <h3 class="text-primary page-header text-center">User Details</h3>
+            </tr>
+            <tr>
+                <th>User Name</th>
+                <td>{{user.username}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{user.email}}</td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</div>
+
+
+{% endblock %}

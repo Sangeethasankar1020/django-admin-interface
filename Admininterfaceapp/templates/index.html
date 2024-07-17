@@ -5,6 +5,7 @@
 <head>
     <title>Navbar</title>
     <link rel="stylesheet" href="{% static  'css/style.css'%}" >
+    <script src="{% static 'jquery/jquery.min.js'%}"></script>
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
@@ -16,4 +17,20 @@
 
     {% endblock %}
 </body>
+
+<script>
+    // Hide messages after 4 seconds
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('.alert').fadeOut('slow');
+        }, 4000); // 4000ms = 4 seconds
+    });
+</script>
+
+
+
+
+
+
+
 </html>

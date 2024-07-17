@@ -30,8 +30,13 @@
         </div>
         <div class="nav navbar-nav navbar-right"> 
             <li><a href="{% url 'Home' %}" >Home</a></li>
-            <li><a href="{% url 'Login' %}" name="Login">Login</a></li>
-            <li><a href="{% url 'Register' %}" name="Register">Register</a></li>
+            {% if user.is_authenticated %}
+              <li><a href="{% url 'Profile' %}" name="Login">Profile</a></li>
+              <li><a href="{% url 'Logout' %}" name="Logout">Logout</a></li>
+            {% else %}
+              <li><a href="{% url 'Login' %}" name="Login">Login</a></li>
+              <li><a href="{% url 'Register' %}" name="Register">Register</a></li>
+            {% endif %}
         </div>
     </div>
 
